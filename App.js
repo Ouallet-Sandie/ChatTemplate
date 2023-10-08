@@ -72,7 +72,7 @@ export default function App() {
             />
         </View>
 
-        <View>
+        <View style={style.inputborder}>
           <TextInput style={style.input} />
           <Button style={style.button} title='Envoyer' />
         </View>
@@ -102,8 +102,6 @@ const style = StyleSheet.create({
     marginTop: 30,
     paddingHorizontal: 30,
     paddingVertical: 10,
-    borderBottomWidth: 1,
-    borderBottomColor: '#D6D6D6'
   },
   profile: {
     backgroundColor: '#D6D6D6',
@@ -119,15 +117,6 @@ const style = StyleSheet.create({
     paddingVertical: 10,
     padding: 5,
   },
-  input: {
-    borderWidth: 1,
-    borderColor: '#000000',
-    minHeight: 50,
-    marginBottom: 10,
-    borderRadius: 5,
-  },
-
-
   message: {
     flex: 1,
     marginBottom: 5
@@ -142,5 +131,23 @@ const style = StyleSheet.create({
     borderWidth: 1,
     borderRadius: 5,
   },
+  messagesContainer: {
+    borderTopWidth: 1,
+    borderColor: '#D6D6D6',
+    paddingTop:10,
+  },
+  input: {
+    borderWidth: 1,
+    borderColor: '#000000',
+    minHeight: 50,
+    marginBottom: 10,
+    borderRadius: 5,
+  },
+  inputborder: {
+    borderTopWidth: 1,
+    borderColor: '#D6D6D6',
+    paddingVertical: 10,
+  },
+
 
 });
